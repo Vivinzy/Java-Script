@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispositivos antigos</title>
+</head>
+<body>
+    <script>
+        function mostrarComentario() {
+            const dispositivo = document.getElementById("dispositivo").value;
+            let comentario = "";
+
+            switch (dispositivo) {
+                case "fitaCassete":
+                    comentario = "A fita cassete, também conhecida como K7 ou compact cassette, é um formato de fita magnética para gravação e reprodução de áudio. Foi um dos formatos de mídia musical mais populares do século XX, tendo sido substituída pelo CD e mais recentemente pelo streaming. ";
+                    break;
+                case "dvd":
+                    comentario = "DVD é a sigla para Digital Versatile Disc ou Digital Video Disc, e refere-se a um formato de disco óptico usado para armazenar dados, especialmente filmes e vídeos. É um disco pequeno e redondo que usa um laser para ler informações gravadas em trilhas.";
+                    break;
+                case "cd":
+                    comentario = "CD pode referir-se a várias coisas, dependendo do contexto. Em geral, significa Compact Disc (disco compacto), um disco óptico digital para armazenamento de dados. No entanto, também pode referir-se a um Certificado de Depósito, um tipo de conta poupança, ou a um Centro de Distribuição, uma unidade de armazenamento e despacho de produtos. Além disso, pode ser uma abreviação de crossdressing.";
+                    break;
+                default:
+                    comentario = "Por favor, selecione um dispositivo para ver as informações.";
+            }
+
+            document.getElementById("comentario").innerText = comentario;
+        }
+    </script>
+</head>
+<body>
+    <h1>Escolha um dispositivo antigo</h1>
+<label for="dispositivo">Digite o nome de um dispositivo:</label>
+<input type="text" id="dispositivo" placeholder="Ex: fitaCassete, dvd, cd">
+<button onclick="mostrarComentario()">Mostrar Comentário</button>
+<p id="comentario" style="margin-top: 20px; font-weight: bold;"></p>
+</body>
+</html>
