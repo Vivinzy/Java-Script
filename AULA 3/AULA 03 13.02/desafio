@@ -1,0 +1,62 @@
+// Desafio 1
+// Criar um algoritimo para separar valores pares e ímpares
+
+let numero = 89769;
+if (numero %2 === 0) {
+    console.log('O numero é par')
+}
+else{
+    console.log('o numero é impar')
+
+}
+
+// Desafio 2 
+// Criar um algoritmo para calcular valores com as expressoes soma , subtrair, multiplicar e dividir
+
+let num1 = 10;
+let num2 = 20;
+let conta = 5;
+
+if (conta == 5) {
+    let resul = num1 + num2;
+    console.log("Resultado da soma" + resul);
+}
+
+if (conta == 5) {
+    let resul = num1 - num2;
+    console.log("Resultado da subtração" + resul);
+}
+
+if (conta == 5) {
+    let resul = num1 * num2;
+    console.log("Resultado da multiplicaçaõ" + resul);
+}
+if (conta == 5) {
+    let resul = num1 / num2;
+    console.log("Resultado da multiplicaçaõ" + resul);
+}
+
+// 
+let a = 10;
+let b = 5;
+
+let haysoma = a = a + b;
+let haysub = a - b;
+let haymult = a * b;
+let haydiv = a / b;
+
+console.log('resultado soma' + haysoma);
+console.log('resultado soma' + haysub);
+console.log('resultado soma' + haymult);
+console.log('resultado soma' + haydiv);
+
+//
+let negativo = 20
+let positivo = 10
+
+if (negativo >= 10) {
+    console.log('negativo');
+}
+if (positivo <=20) {
+    console.log('positivo');
+}
